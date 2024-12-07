@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Screening - Ripple Flash</title>
+    <link rel="stylesheet" href="css/singlefilm.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="toggleMenu()">Menu</div>
+        <div> <h1 id="company-title">Ripple Flash</h1></div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <section class="film-video">
+        <video controls autoplay muted>
+            <source src="film.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1 class="film-title">Film Title</h1>
+    </section>
+
+    <section class="film-credits">
+        <div class="credit-info">
+            <div class="credit-left">
+                <p><strong>Release Date:</strong> xxx</p>
+                <p><strong>Written by:</strong> xxx</p>
+                <p><strong>Produced by:</strong> xxx</p>
+            </div>
+            <div class="credit-right">
+                <p><strong>Directed by:</strong> xxx</p>
+                <p><strong>Starring:</strong></p>
+                <p>xxx, xxx</p>
+                <p>xxx, xxx</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="film-description">
+        <h2>Description</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem sed lorem suscipit suscipit. Praesent eu lorem id libero auctor hendrerit sit amet nec nulla.</p>
+    </section>
+
+    <footer class="footer">
+        <video autoplay muted loop>
+            <source src="footer-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="footer-overlay">
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p>Email: contact@rippleflash.com<br>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-logo">
+                <h2>Ripple Flash</h2>
+            </div>
+        </div>
+    </footer>
+
+         <!-- Sliding Menu -->
+         <div id="sliding-menu" class="sliding-menu">
+            <div class="menu-close" onclick="toggleMenu()">X</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opportunity.html">Opportunity</a></li>
+                <li><a href="filmarchive.html">Film Archive</a></li>
+                <li><a href="filmmakersinfo.html">Filmmakers</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- Transparent overlay -->
+        <div id="menu-overlay" class="menu-overlay" onclick="closeMenu()"></div>
+    
+        <script>
+            const menu = document.getElementById('sliding-menu');
+            const overlay = document.getElementById('menu-overlay');
+    
+            function toggleMenu() {
+                menu.classList.toggle('open');
+                overlay.classList.toggle('visible');
+            }
+    
+            function closeMenu() {
+                menu.classList.remove('open');
+                overlay.classList.remove('visible');
+            }
+        </script>
+</body>
+</html>
