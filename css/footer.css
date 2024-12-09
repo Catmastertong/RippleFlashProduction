@@ -1,0 +1,42 @@
+/* Footer section */
+.footer {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.footer-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.footer-logo h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footer p{
+    line-height: 2;
+}

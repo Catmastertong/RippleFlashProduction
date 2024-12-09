@@ -1,0 +1,140 @@
+/* Contact Banner Section */
+.contact-banner {
+    height: 400px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-banner .contact-image {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    background-size: cover;
+
+}
+
+/* Contact Content Section */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+}
+
+.form-section {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #444;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #fff;
+}
+
+form button {
+    background-color: #555;
+    cursor: pointer;
+}
+
+.details-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #444;
+    margin-left:30px;
+    line-height: 3;
+}
+
+.details-section h3 {
+    margin-bottom: 10px;
+}
+
+.details-section h2 {
+    margin-left:30px;
+}
+
+.details-section p {
+    margin-left:30px;
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .form-section, 
+    .details-section {
+        min-width: 100%;
+    }
+
+    .details-section {
+        margin-left: 0;
+    }
+
+    .contact-banner {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section h2,
+    .details-section h2 {
+        font-size: 20px;
+    }
+
+    form input, 
+    form textarea, 
+    form button {
+        font-size: 12px;
+    }
+
+    .details-section h3 {
+        font-size: 16px;
+    }
+
+    .details-section p {
+        font-size: 14px;
+    }
+}

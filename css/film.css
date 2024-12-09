@@ -1,0 +1,8 @@
+.film-video iframe {
+    width: 100vw; /* Full width of the viewport */
+    height: 56.25vw; /* Maintain 16:9 aspect ratio */
+    max-height: 100vh; /* Restrict to the height of the viewport */
+    border: none; /* Remove iframe border */
+    display: block;
+    margin: 0 auto; /* Center the video */
+}

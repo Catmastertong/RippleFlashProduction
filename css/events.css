@@ -1,0 +1,94 @@
+/* Events section */
+.events {
+    padding: 100px 40px;
+    background-color: #111;
+}
+
+.events h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #222;
+    padding: 60px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.event-image {
+    width: 100%;
+    height: 300px;
+    background-color: #555;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.event-card h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .events {
+        padding: 40px 20px;
+    }
+
+    .events h1 {
+        font-size: 30px; 
+    }
+
+    .event-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    }
+
+    .event-card {
+        padding: 30px; 
+    }
+
+    .event-image {
+        height: 180px;
+    }
+
+    .event-card h2 {
+        font-size: 18px; 
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .events {
+        padding: 30px 10px; 
+    }
+
+    .events h1 {
+        font-size: 28px; 
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .event-card {
+        padding: 20px; 
+    }
+
+    .event-image {
+        height: 150px; 
+    }
+
+    .event-card h2 {
+        font-size: 16px; 
+    }
+}

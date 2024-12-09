@@ -1,0 +1,218 @@
+/* Archive section */
+.archive {
+    padding: 100px 40px;
+    background-color: #111;
+}
+
+.archive h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.sort {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.sort p {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sort button {
+    padding: 8px 12px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.film-grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
+}
+
+.film-block {
+    position: relative;
+    overflow: hidden;
+    line-height:40px;
+    margin-top: 40px;
+
+}
+
+.film-cover {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover; /* Ensures the image covers the block */
+    background-position: center; /* Centers the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.film-cover.medium {
+    height: 350px;
+}
+
+.film-cover.small {
+    height: 250px;
+}
+
+.film-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.Year {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Filmname {
+    font-size: 25px;
+    font-style: oblique;
+}
+
+
+
+.film-cover:hover .film-info {
+    opacity: 1; /* Show on hover */
+}
+
+
+/* Submission form */
+.submission-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.submission-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+    margin-top: 10px;
+}
+
+form button {
+    background-color: #444;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .archive h1 {
+        font-size: 28px; /* Further reduce font size */
+        text-align: center; /* Center-align for smaller screens */
+    }
+
+    .film-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Narrower grid for tablets */
+        gap: 10px; /* Reduced gap for smaller devices */
+    }
+
+    .film-cover {
+        height: 250px;
+    }
+
+    .film-cover.medium {
+        height: 200px;
+    }
+
+    .film-cover.small {
+        height: 150px;
+    }
+
+    .film-info {
+        font-size: 10px; /* Compact font size for smaller screens */
+    }
+
+    .Year {
+        font-size: 16px;
+    }
+
+    .Filmname {
+        font-size: 18px;
+    }
+
+    .submission-form h2 {
+        font-size: 18px;
+    }
+
+    form button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .archive h1 {
+        font-size: 24px; /* Smaller font for mobile devices */
+    }
+
+    .film-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobiles */
+    }
+
+    .film-cover {
+        height: 200px; /* Smaller image heights */
+    }
+
+    .film-cover.medium,
+    .film-cover.small {
+        height: 150px;
+    }
+
+    .film-info {
+        font-size: 8px;
+    }
+
+    .submission-form h2 {
+        font-size: 16px;
+    }
+
+    form {
+        gap: 10px; /* Compact spacing */
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}

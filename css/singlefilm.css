@@ -1,0 +1,31 @@
+/* Film credits section */
+.content-film{
+    margin-top: 100px;
+}
+
+.film-credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 40px;
+    background-color: #111;
+    color: #fff;
+    gap: 20px;
+}
+
+.film-title {
+    margin: 0;
+    font-size: 30px; /* Title font size */
+    line-height: 1.4;
+    text-align: left;
+    width: 50%; /* Take up half the width */
+}
+
+.credit-info {
+    width: 50%; /* Take up the remaining half */
+    font-size: 20px; /* Font size for credit information */
+}
+
+.credit-info p {
+    margin: 10px 0; /* Add spacing between lines */
+}
