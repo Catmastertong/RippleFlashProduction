@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ripple Flash</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="toggleMenu()">Menu</div>
+        <div class="logo-title">
+            &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<img src="img/dark-logo.png" alt="Logo" id="header-logo">
+            <h1 id="company-title">Ripple Flash</h1>
+        </div>
+        <div class="search">
+            <form id="search-form" action="search.html" method="get">
+                <input type="text" name="q" placeholder="Search..." required>
+                <button type="submit" style="display: none;">Search</button>
+            </form>
+        </div>
+    </header>
+
+
+    <!-- Full Screen Video Section -->
+    <section class="about-video">
+        <video autoplay muted loop>
+            <source src="Promotion-about.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <!-- Short Text Section -->
+    <section class="about-short-text">
+        <p>To become the leading global platform where arts and media students connect, create, and thrive.<br>
+            We envision a world where emerging filmmakers and artists have equitable access to resources, mentorship,<br>
+             and opportunities, driving innovation and diversity in the creative industries.</p>
+    </section>
+    
+
+    <!-- How Can We Help Section -->
+    <div class="help-title">
+        <h2>How Can We Help</h2>
+    </div>
+    <section class="about-help">
+        <div class="help-grid">
+            <div class="help-item"><b>Film Challenges</b><br><br>Create theme-based challenges<br><br>
+                Organizing semester-long competitions and screenings <br><br>
+                Encourage cross-department collaborations
+            </div>
+            <div class="help-item"><b>Film Production</b><br><br>
+                Students with ideas or scripts submit proposals to us.<br><br>
+                We organize casting auditions and recruit crew members.<br><br>
+                Based on crew expertise, we provide tailored training.<br><br>
+                Pre-production tasks include location scouting and set design.
+            </div>
+            <div class="help-item"><b>Resource Development</b><br> <br>
+                Creating a film library/archive and a platform website.
+                <br> <br>Building and updating a comprehensive film library with tutorials, case studies, and templates.
+            </div>
+
+        </div>
+    </section>
+
+    <!-- our events -->
+    <section class="about-filmmakers">
+        <h2>Working Environment</h2>
+        <div class="scroll-container">
+            <img src="img/work2.webp" alt="Cinque Terre" width="600" height="400">
+            <img src="img/work4.webp" alt="Forest" width="600" height="400">
+            <img src="img/work5.webp" alt="Northern Lights" width="600" height="400">
+            <img src="img/work1.webp" alt="Mountains" width="600" height="400">
+        </div>
+        <p>! WE ARE HERE TO HELP YOU !</p>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <video autoplay muted loop>
+            <source src="footer-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="footer-overlay">
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p>Email: rippleflash@outlook.com</p>
+                <p>Phone/Wechat: 13261793331</p>
+                <p>Location: Duke Kunshan University, Jiangsu, China</p>
+
+            </div>
+            <div class="footer-logo">
+                <img src="img/dark-logo.png" alt="Logo" id="header-logo">
+                <h2>Ripple Flash</h2>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sliding Menu -->
+    <div id="sliding-menu" class="sliding-menu">
+        <div class="menu-close" onclick="toggleMenu()">X</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="opportunity.html">Opportunity</a></li>
+            <li><a href="filmarchive.html">Film Archive</a></li>
+            <li><a href="filmmakersinfo.html">Filmmakers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Transparent Overlay -->
+    <div id="menu-overlay" class="menu-overlay" onclick="closeMenu()"></div>
+
+    <script>
+        const menu = document.getElementById('sliding-menu');
+        const overlay = document.getElementById('menu-overlay');
+
+        function toggleMenu() {
+            menu.classList.toggle('open');
+            overlay.classList.toggle('visible');
+        }
+
+        function closeMenu() {
+            menu.classList.remove('open');
+            overlay.classList.remove('visible');
+        }
+
+    </script>
+</body>
+</html>

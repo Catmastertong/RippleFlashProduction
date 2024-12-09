@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripple Flash</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="toggleMenu()">Menu</div>
+        <div class="search">
+            <form id="search-form" action="search.html" method="get">
+                <input type="text" name="q" placeholder="Search..." required>
+                <button type="submit" style="display: none;">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="fullscreen" id="fullscreen">
+        <div id="logo-title-container">
+            <img src="img/dark-logo.png" alt="Logo" id="company-logo">
+            <h1 id="company-title">Ripple Flash</h1>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <video autoplay muted loop>
+            <source src="Promotion-home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="company-goals">
+        <h2>Our Goals</h2>
+        <p>Ripple Flash empowers aspiring arts and media students, 
+            particularly those in filmmaking, by providing an inclusive 
+            and innovative platform for collaboration, skill-building,
+             and career advancement. <br>We aim to bridge the gap between
+              education and industry, fostering a vibrant and supportive 
+              creative community.
+        </p>
+    </section>
+
+    <section class="film-collection">
+        <h2>Film Collection</h2>
+        <div class="film-row">
+            <!-- Block 1 -->
+            <div class="film-block">
+                <div class="film-title">&nbsp &nbsp World's First Light Painting Diary</div>
+                <div class="film-title">&nbsp &nbsp Kaiqi</div>
+                <iframe src="https://player.vimeo.com/video/1037201153?h=2b38668d81" 
+                    width="500" height="360" frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+    
+            <!-- Block 2 -->
+            <div class="film-block">
+                <div class="film-title">&nbsp &nbsp Hand Book</div>
+                <div class="film-title">&nbsp &nbsp Lan</div>
+                <iframe src="https://player.vimeo.com/video/936133674" 
+                    width="500" height="360" frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+    
+            <!-- Block 3 -->
+            <div class="film-block">
+                <div class="film-title">&nbsp &nbsp A Cinema Poem</div>
+                <div class="film-title">&nbsp &nbsp Junyi Yu</div>
+                <iframe src="https://player.vimeo.com/video/1037203143?h=7a5789fe56" 
+                    width="500" height="360" frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <video autoplay muted loop>
+            <source src="footer-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="footer-overlay">
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p>Email: rippleflash@outlook.com</p>
+                <p>Phone/Wechat: 13261793331</p>
+                <p>Location: Duke Kunshan University, Jiangsu, China</p>
+
+            </div>
+            <div class="footer-logo">
+                <img src="img/dark-logo.png" alt="Logo" id="header-logo">
+                <h2>Ripple Flash</h2>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sliding Menu -->
+    <div id="sliding-menu" class="sliding-menu">
+        <div class="menu-close" onclick="toggleMenu()">X</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="opportunity.html">Opportunity</a></li>
+            <li><a href="filmarchive.html">Film Archive</a></li>
+            <li><a href="filmmakersinfo.html">Filmmakers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Transparent overlay -->
+    <div id="menu-overlay" class="menu-overlay" onclick="closeMenu()"></div>
+
+    <script>
+        const menu = document.getElementById('sliding-menu');
+        const overlay = document.getElementById('menu-overlay');
+
+        function toggleMenu() {
+            menu.classList.toggle('open');
+            overlay.classList.toggle('visible');
+        }
+
+        function closeMenu() {
+            menu.classList.remove('open');
+            overlay.classList.remove('visible');
+        }
+        const logoTitleContainer = document.querySelector("#logo-title-container");
+
+        window.addEventListener("scroll", () => {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 450) {
+                // Make the container fixed and shrink
+                logoTitleContainer.style.position = "fixed";
+                logoTitleContainer.style.top = "0"; // Overlay directly at the top
+                logoTitleContainer.style.transform = "scale(0.4)"; // Shrink the container
+                logoTitleContainer.style.transition = "all 0.3s ease-in-out";
+            } else {
+                // Revert to sticky behavior
+                logoTitleContainer.style.position = "sticky";
+                logoTitleContainer.style.top = "0"; // Reset to default
+                logoTitleContainer.style.transform = "scale(1)"; // Reset to original size
+            }
+        });
+
+
+    </script>   
+</body>
+</html>
