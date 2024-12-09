@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmmakers Archive - Ripple Flash</title>
+    <link rel="stylesheet" href="css/filmmakersinfo.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="toggleMenu()">Menu</div>
+        <div class="logo-title">
+            &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <img src="img/dark-logo.png" alt="Logo" id="header-logo">
+            <h1 id="company-title">Ripple Flash</h1>
+        </div>
+        <div class="search">
+            <form id="search-form" action="search.html" method="get">
+                <input type="text" name="q" placeholder="Search..." required>
+                <button type="submit" style="display: none;">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="filmmakers">
+        <h1>Filmmakers</h1>
+        <div class="sort">
+            <p>Sort by:</p>
+            <button id="sort-a-z">A-Z</button>
+            <button id="sort-skills">Skills</button>
+        </div>
+        <div class="filmmaker-grid">
+            <!-- Filmmaker Block 1 -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/wkq.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Kaiqi Wu</h2>
+                        <p>Class of 2024</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Photographer</li>
+                            <li>Editor</li>
+                            <li>AI Video Generator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/lan.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Lan Wei</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Director</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/xt.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Xiao Theng Liew</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Director</li>
+                            <li>Cinematographer</li>
+                            <li>Editor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/qyy.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Yaoyun Qi</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Director</li>
+                            <li>ScriptWriter</li>
+                            <li>Cinematographer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fifth filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/yjy.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Junyi Yu</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Photographer</li>
+                            <li>Cinematographer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sixth filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/yt.jpg);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Tong Yu</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Cinematographer</li>
+                            <li>Editor</li>
+                            <li>Animator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- seventh filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/yanjiayue.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Jiayue Yan</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Director</li>
+                            <li>Editor</li>
+                            <li>Lighting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- eighth filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/hty.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Tianying Hu</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Director</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ninth filmmakers -->
+            <div class="filmmaker-card">
+                <div class="filmmaker-photo" style="background-image:url(img/wjy.JPG);"></div>
+                <div class="filmmaker-details">
+                    <div class="filmmaker-left">
+                        <h2>Jingyi Wang</h2>
+                        <p>Class of 2025</p>
+                    </div>
+                    <div class="filmmaker-right">
+                        <ul>
+                            <li>Director</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="join-form">
+            <h2>Join Us!</h2>
+            <form action="https://formspree.io/f/xwpkjbog" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="class">Class of</label>
+                    <input type="text" id="class" name="class">
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skill1" name="skill1" placeholder="Skill 1">
+                    <input type="text" id="skill2" name="skill2" placeholder="Skill 2">
+                    <input type="text" id="skill3" name="skill3" placeholder="Skill 3">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="introduction">Introduce Yourself</label>
+                    <textarea id="introduction" name="introduction"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="projects">List Some of Your Projects</label>
+                    <textarea id="projects" name="projects"></textarea>
+                </div>
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <video autoplay muted loop>
+            <source src="footer-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="footer-overlay">
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p>Email: rippleflash@outlook.com</p>
+                <p>Phone/Wechat: 13261793331</p>
+                <p>Location: Duke Kunshan University, Jiangsu, China</p>
+
+            </div>
+            <div class="footer-logo">
+                <img src="img/dark-logo.png" alt="Logo" id="header-logo">
+                <h2>Ripple Flash</h2>
+            </div>
+        </div>
+    </footer>
+
+         <!-- Sliding Menu -->
+         <div id="sliding-menu" class="sliding-menu">
+            <div class="menu-close" onclick="toggleMenu()">X</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="opportunity.html">Opportunity</a></li>
+                <li><a href="filmarchive.html">Film Archive</a></li>
+                <li><a href="filmmakersinfo.html">Filmmakers</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- Transparent overlay -->
+        <div id="menu-overlay" class="menu-overlay" onclick="closeMenu()"></div>
+    
+        <script>
+            const menu = document.getElementById('sliding-menu');
+            const overlay = document.getElementById('menu-overlay');
+    
+            function toggleMenu() {
+                menu.classList.toggle('open');
+                overlay.classList.toggle('visible');
+            }
+    
+            function closeMenu() {
+                menu.classList.remove('open');
+                overlay.classList.remove('visible');
+            }
+        // form
+        const form = document.querySelector("form");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault(); // Prevent default form submission
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: { Accept: "application/json" },
+            })
+            .then((response) => {
+                if (response.ok) {
+                    alert("Thank you! Your submission has been received.");
+                    form.reset();
+                } else {
+                    alert("Oops! There was an error. Please try again.");
+                }
+            })
+            .catch((error) => {
+                alert("Oops! There was a problem submitting your form.");
+            });
+         });
+
+        //  sort by
+        document.getElementById("sort-a-z").addEventListener("click", () => {
+            const grid = document.querySelector(".filmmaker-grid");
+            const cards = Array.from(grid.children);
+
+            // Sort cards alphabetically by filmmaker name
+            cards.sort((a, b) => {
+                const nameA = a.querySelector(".filmmaker-left h2").textContent.toLowerCase();
+                const nameB = b.querySelector(".filmmaker-left h2").textContent.toLowerCase();
+                return nameA.localeCompare(nameB);
+            });
+
+            // Re-append sorted cards to the grid
+            grid.innerHTML = "";
+            cards.forEach(card => grid.appendChild(card));
+        });
+
+        document.getElementById("sort-skills").addEventListener("click", () => {
+            const grid = document.querySelector(".filmmaker-grid");
+            const cards = Array.from(grid.children);
+
+            // Sort cards by number of skills
+            cards.sort((a, b) => {
+                const skillsA = a.querySelectorAll(".filmmaker-right ul li").length;
+                const skillsB = b.querySelectorAll(".filmmaker-right ul li").length;
+                return skillsB - skillsA; // Descending order
+            });
+
+            // Re-append sorted cards to the grid
+            grid.innerHTML = "";
+            cards.forEach(card => grid.appendChild(card));
+        });
+</script>
+
+        </script>
+</body>
+</html>
